@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/71fffe37ae.js" crossorigin="anonymous"></script>
+  <title>accordion</title>
+</head>
+
+<body>
+  <section class="container block accordion">
+    <div class="accord-wrapper">
+      <div class="accord__intro">
+        <h2>رزومه و سوابق</h2>
+        <span>
+          <span>ویرایش</span>
+          <span>
+            <i class="far fa-edit"></i>
+          </span>
+        </span>
+      </div>
+
+      <div class="accord">
+        <header class="accord__header">
+          <h2 class="accord__heading">سابقه تحصیلی</h2>
+          <span class="icon icon--container">
+            <i class="fa-solid fa-chevron-down"></i>
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+          </span>
+        </header>
+        <div class="accord__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+          گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+          نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+        </div>
+      </div>
+
+      <div class="accord">
+        <header class="accord__header">
+          <h2 class="accord__heading">سابقه شغلی</h2>
+          <span class="icon icon--container">
+            <i class="fa-solid fa-chevron-down"></i>
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+          </span>
+        </header>
+        <div class="accord__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+          گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+          نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+        </div>
+      </div>
+
+      <div class="accord">
+        <header class="accord__header">
+          <h2 class="accord__heading">مهارت‌ها</h2>
+          <span class="icon icon--container">
+            <i class="fa-solid fa-chevron-down"></i>
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+          </span>
+        </header>
+        <div class="accord__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+          گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+          نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const accordHeaders = document.querySelectorAll(".accord__header");
+    const accord = document.querySelector(".accord");
+
+    accordHeaders.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        console.log(e.target.parentElement);
+        e.target.parentElement.classList.toggle("accord__expanded");
+      });
+    });
+  </script>
+</body>
+
+</html>
