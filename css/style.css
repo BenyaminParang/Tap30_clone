@@ -670,7 +670,7 @@ footer .footer {
   height: 478px;
   display: flex;
   justify-content: center;
-  background-image: url("https://tapsi.ir/images/home/banner-mobile.webp");
+  background-image: url("../assets/images/banner-mobile.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -756,7 +756,7 @@ footer .footer {
 @media screen and (min-width:768px) {
   .hero-section {
     height: 501px;
-    background-image: url("https://tapsi.ir/images/home/banner.webp");
+    background-image: url("../assets/images/banner.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
